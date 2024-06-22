@@ -34,6 +34,7 @@ function addElement(){
     if(text !== ""){
       
         createE()
+        inp.value = ""
        
     }
 }
