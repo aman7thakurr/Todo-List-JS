@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="todoapp">
+        <h4>ADD ITEM</h4>
+        <hr />
+        <input type="text" value="" id="input" />
+        <button type="button" onclick="addElement()">Add</button>
+
+        <div class="todo">
+          <h4>TODO</h4>
+          <hr />
+          <div id="tododata"></div>
+        </div>
+
+        <div class="completed">
+          <h4>COMPLETED</h4>
+          <hr />
+          <div id="completeddata"></div>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
