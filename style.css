@@ -5,6 +5,16 @@ body{
     justify-content: center;
     margin-top: 100px;
 }
+#input{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
 .parent{
     width: 500px;
+}
+.todoapp{
+    margin-bottom: 40px;
+}
+.todo{
+    margin-bottom: 40px;
 }
