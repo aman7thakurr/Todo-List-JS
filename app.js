@@ -6,7 +6,8 @@ const newDiv = document.createElement("div")
 const checkbox = document.createElement("input")
 checkbox.type = 'checkbox'
 checkbox.value ='false'
-checkbox.className   = 'checkbox' 
+checkbox.className   = 'plus-minus'
+newDiv.className ='checkbox-wrapper-50' 
 const newDivText = document.createTextNode(inp.value)
 newDiv.appendChild(newDivText)
 const currentDiv =document.getElementById("div1")
@@ -14,16 +15,17 @@ todoData.insertBefore(newDiv,currentDiv)
 newDiv.insertBefore(checkbox,newDivText )
 const editbtn =document.createElement("button")
 editbtn.textContent = "Edit"
-editbtn.className = "editbtn"
+editbtn.className = "button-23"
 newDiv.appendChild(editbtn)
 const delbtn =document.createElement("button")
 delbtn.textContent = "Delete"
-delbtn.className = "delbtn"
+delbtn.className = "button-23"
 newDiv.appendChild(delbtn)
 
 editbtn.addEventListener('click',function(){
     const editInput = document.createElement("input")
     editInput.type = "text"
+    editInput.className ='button-23'
     editInput.value = newDivText.textContent
     newDiv.replaceChild(editInput,newDivText)
     editInput.addEventListener('blur',function(){
