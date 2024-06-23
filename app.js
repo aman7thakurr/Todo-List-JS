@@ -45,6 +45,7 @@ checkbox.addEventListener('change',function(){
         completedData.insertBefore(newDiv,currentDiv)
 newDiv.insertBefore(checkbox,newDivText )
 editbtn.remove()
+
        
     }
     else{

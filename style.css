@@ -7,15 +7,14 @@ body{
 }
 
 
-<div class="checkbox-wrapper-50">
-  <input type="checkbox" class="plus-minus">
-</div>
 
-<style>
-  .checkbox-wrapper-50 *,
+
+
+  /* .checkbox-wrapper-50 *,
   .checkbox-wrapper-50 *::before,
   .checkbox-wrapper-50 *::after {
     box-sizing: border-box;
+   
   }
 
   .checkbox-wrapper-50 .plus-minus {
@@ -146,7 +145,7 @@ body{
       background-image: radial-gradient(ellipse at center, var(--secondary) 0%, var(--secondary) 25%, var(--primary) 25.1%, var(--primary) 100%);
       background-position: 50% 50%;
     }
-  }
+  } */
 
 
 .button-23 {
@@ -172,6 +171,8 @@ body{
   user-select: none;
   -webkit-user-select: none;
   width: auto;
+  margin-left: 60px;
+  margin-right: 5px;
 }
 
 .button-23:focus-visible {
@@ -195,6 +196,23 @@ body{
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 5px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
 }
 .parent{
     width: 500px;
