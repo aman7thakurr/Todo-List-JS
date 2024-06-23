@@ -20,6 +20,18 @@ const delbtn =document.createElement("button")
 delbtn.textContent = "Delete"
 delbtn.className = "delbtn"
 newDiv.appendChild(delbtn)
+
+editbtn.addEventListener('click',function(){
+    const editInput = document.createElement("input")
+    editInput.type = "text"
+    editInput.value = newDivText.textContent
+    newDiv.replaceChild(editInput,newDivText)
+    editInput.addEventListener('blur',function(){
+        newDivText.textContent = editInput.value
+        newDiv.replaceChild(newDivText,editInput)
+        })
+
+})
 delbtn.addEventListener('click',function(){
     deleteElement()
 })
